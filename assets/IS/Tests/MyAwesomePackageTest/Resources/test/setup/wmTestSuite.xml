@@ -17,7 +17,7 @@
             </input>
             <expected>
                 <file/>
-                <field path="/out" value="12"/>
+                <field path="/out" value="3"/>
             </expected>
         </service>
     </webMethodsTestCase>
