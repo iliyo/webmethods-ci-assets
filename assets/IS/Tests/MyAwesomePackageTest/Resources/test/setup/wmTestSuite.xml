@@ -31,4 +31,17 @@
             </expected>
         </service>
     </webMethodsTestCase>
+    <webMethodsTestCase name="Service with mock">
+        <mock folder="pub.flow" name="debugLog">
+            <exception class="java.lang.RuntimeException" message="Test"/>
+        </mock>
+        <service folder="myAwesomePackage.pub" name="debugLogCaller">
+            <input>
+                <file/>
+            </input>
+            <expected>
+                <exception class="java.lang.IllegalArgumentException"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
 </webMethodsTestSuite>
