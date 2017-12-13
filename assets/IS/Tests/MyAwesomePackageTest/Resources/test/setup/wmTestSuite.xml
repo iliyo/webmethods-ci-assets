@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="yoTestSuite">
+    <webMethodsTestCase name="Nominal Case">
+        <service folder="myAwesomePackage.pub" name="yo">
+            <input>
+                <file filename="Resources/test/data/input.xml"/>
+            </input>
+            <expected>
+                <file filename="Resources/test/data/expectedOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="Crazy Case">
+        <service folder="myAwesomePackage.pub" name="yo">
+            <input>
+                <file filename="Resources/test/data/input.xml"/>
+            </input>
+            <expected>
+                <file/>
+                <field path="/out" value="12"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
