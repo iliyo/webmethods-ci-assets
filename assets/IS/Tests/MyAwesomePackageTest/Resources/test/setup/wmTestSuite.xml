@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<webMethodsTestSuite description="" name="yoTestSuite">
+<webMethodsTestSuite description="" name="TS_wmTestSuite.xml">
     <webMethodsTestCase name="Nominal Case">
         <service folder="myAwesomePackage.pub" name="yo">
             <input>
@@ -18,6 +18,16 @@
             <expected>
                 <file/>
                 <field path="/out" value="3"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Generate a Test Wizard" name="TC_yo">
+        <service folder="myAwesomePackage.pub" name="yo">
+            <input>
+                <file filename="Resources/test/data/myAwesomePackage_pub_yo_input.xml"/>
+            </input>
+            <expected>
+                <file filename="Resources/test/data/myAwesomePackage_pub_yo_output.xml"/>
             </expected>
         </service>
     </webMethodsTestCase>
